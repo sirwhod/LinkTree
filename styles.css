@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #1F1F1F;
+  --primary-color: #77f382;
+
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 1.6rem;
+
+  text-align: center;
+
+  overflow: overlay;
+
+  background-color: var(--body-bg-color);
+
+  color: var(--primary-color);
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  text-decoration: none;
+  color: var(--primary-color);
+  text-transform: uppercase;
+
+  padding-block: 1.2rem;
+  padding-inline: 15%;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  border: 2px solid var(--primary-color);
+  border-radius: 0.4rem;
+
+  margin-bottom: 1.6rem;
+  margin-inline: 4.4rem;
+
+  transition: background-color 250ms;
+}
+.button:hover {
+  color: var(--body-bg-color);
+  background-color: var(--primary-color);
+}
+
+.button:hover svg path {
+  stroke: var(--body-bg-color);
+}
+
+.button svg path {
+  stroke: var(--primary-color)
+}
+
+.button:first-child {
+  margin-top: 3.3rem;
+}
+
+/*  Header */
+
+header .header {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header .header img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  padding: 0.6rem;
+
+  border: 2px solid var(--primary-color);
+}
+
+header .header p {
+  margin-top: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
